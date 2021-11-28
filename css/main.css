@@ -1,0 +1,178 @@
+/* === MAIN */
+.main--pages {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  padding: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*  HOME PAGE */
+#home > h1, 
+.main--pages h2 {
+  font-family: var(--font-title);
+  margin-top: 5rem;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+#home > p {
+  margin: 1rem 0 10rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  font-family: var(--font-text-alt);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* INPUT USER */
+.inputs {
+  width: auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.inputs * {
+  height: var(--btn);
+  text-align: center;
+  border: solid 1px var(--gray);
+  border-radius: 10px;
+  box-shadow: 2px 5px 20px var(--dark-50);
+  font-family: var(--font-text);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.inputs *:hover,
+.inputs *:focus {
+  box-shadow: 2px 5px 20px var(--flash-50);
+}
+.inputs *:active, 
+.inputs *:target {
+  box-shadow: none;
+  border: none;
+}
+.input-elements-children {
+  min-width: 75px;
+  width: 30vw;
+  max-width: 150px;
+  font-size: 1.5rem;
+}
+
+.input-task{
+  font-size: 2rem;
+  min-width: 150px;
+  width: 60vw;
+  max-width: 400px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  animation: onLoad 1s linear ;
+  transition: 300ms;
+
+}
+
+select.input-elements-children {
+  background-color: var(--light);
+  color: var(--dark-50);
+}
+
+.input-btn {
+  background-color: var(--flash);
+  font-size: 3rem;
+  color: var(--light);
+  border: none;
+  box-shadow: 2px 2px 25px var(--dark-50);
+}
+.input-btn:hover {
+  color: var(--contrast-50);
+}
+.input-btn:active {
+  color: var(--dark-50);
+}
+
+/* PAGES BACKGROUND */
+.main--pages {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home {
+  background-image: url(/assets/img/home-blured.png);
+}
+
+#warning {
+  background-image: url(/assets/img/warning-blured.png);
+}
+
+#moderate {
+  background-image: url(/assets/img/medium-blured.png);
+}
+
+#can-wait {
+  background-image: url(/assets/img/chill-blured.png);
+}
+
+
+/* ======= TO DO List===== */
+.main--pages h2{
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--light);
+  text-shadow: 0 1px 7px var(--dark-50);
+}
+
+.fi-rr-cross-circle {
+  color: gray;
+  font-size: 2rem;
+}
+.fi-rr-cross-circle:hover {
+  color: rgb(245, 142, 8);
+  text-shadow: 1px 1px 3px rgb(255, 94, 0);
+}
+.fi-rr-cross-circle:focus,
+.fi-rr-cross-circle:active,
+.fi-rr-cross-circle:target,
+.fi-rr-cross-circle:visited {
+  color: greenyellow;
+  text-shadow: 1px 1px 3px greenyellow;
+}
+
+.tasks ul{
+  height: 60vh;
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--light-50);
+  border-radius: 15px;
+}
+
+.tasks li{
+  font-size: 2rem;
+  color: var(--light);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#p2 li {
+  color: var(--dark);
+}
+
+.tasks button.btn-delete{
+  width: 30px;
+  text-align: center;
+  outline: none;
+  background-color: #ffffff00;
+  color: none;
+  border: none;
+  box-shadow: none;
+  transform: translate(0, 5px);
+}

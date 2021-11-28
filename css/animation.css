@@ -1,0 +1,43 @@
+/* -- classes d'animations */
+.menuIn {
+  animation: menuIn 300ms;
+}
+.menuOut {
+  animation: menuOut 300ms;
+}
+/* -- animations */
+@keyframes menuOut {
+  0% {
+    opacity: 1;
+    translate: 0 0%;
+    display: flex;
+  }
+  100% {
+    opacity: 0.5;
+    translate: -100% 0;
+    display: none;
+  }
+}
+@keyframes menuIn {
+  0% {
+    opacity: 0.5;
+    translate: -100% 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0%;
+    display: flex;
+  }
+}
+
+@keyframes onLoad {
+  0%{
+    left: -400%;
+  }
+
+  100% {
+    left: 0;
+  }
+  
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- METAS -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:ital,wght@0,100;0,400;0,600;0,800;0,900;1,100;1,400;1,600;1,900&family=Poppins:ital,wght@0,100;0,400;0,900;1,100&display=swap" rel="stylesheet"> 
+    <!-- MATERIAL ICON FLATICON -->
+    <link rel="stylesheet" href="/assets/icons/css/uicons-regular-rounded.css">
+    <!-- CSS -->
+    <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="stylesheet" href="/css/sideBar.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <button id="btn"><span class='fi fi-rr-apps'></span></button>
+            <nav id="nav">
+            <ul>
+                <li><a class="menu-links menu-link--special" href="#home"><span class="fi fi-rr-angle-small-right"></span> Add Task</a></li>
+                <li><a class="menu-links" href="#warning"><span class="fi fi-rr-angle-small-right"></span> Urgent</a></li>
+                <li><a class="menu-links" href="#moderate"><span class="fi fi-rr-angle-small-right"></span> Normal</a></li>
+                <li><a class="menu-links" href="#can-wait"><span class="fi fi-rr-angle-small-right"></span> Waiting</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="main--pages">
+                <h1>MY TODO LIST</h1>
+                <p>Pour ne rien oublier</p>
+                <div class="inputs">
+                    <input class="input-elements input-task" type="text" name="task" placeholder="Write your task here.." maxlength="25">
+                    <select name="priority" class="input-elements input-elements-children">
+                        <option value="p3" selected>--Priority</option>
+                        <option value="p1">Important</option>
+                        <option value="p2">Moderate</option>
+                        <option value="p3">Okay</option>
+                    </select>
+                    <button class="input-elements input-elements-children input-btn">&plus;</button>
+                </div>
+            </section>
+            <section id="warning" class="main--pages">
+                <h2>Very important tasks</h2>
+                <div class="tasks" id="p1">
+                    <ul></ul>
+                </div>
+            </section>
+            <section id="moderate" class="main--pages">
+                <h2>Moderate</h2>
+                <div class="tasks" id="p2">
+                    <ul></ul>
+                </div>
+            </section>
+            <section id="can-wait" class="main--pages">
+                <h2>Can Wait</h2>
+                <div class="tasks" id="p3">
+                    <ul></ul>
+                    </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <ul>
+            <li>2021 &copy; Maxime Tamburrini : <a href="https://github.com/maxiim3">@maxiim3</a></li>
+            <li>credit pictures</li>
+            <li> from Unsplash</li>
+            <li> jonathan-borba-gFsttYw62g0-unsplash</li>
+            <li> lute-8l5YOn7WL0U-unsplash</li>
+            <li> marek-piwnicki-g3HplRqNifo-unsplash</li>
+            <li> noslifactory-3gkyK1eDbbU-unsplash</li>
+            <li>Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a></li>
+        </ul>
+    </footer>
+    <!-- JS SCRIPT -->
+    <script src="./js/nav-bar.js" defer></script>
+    <script src="./js/task-formular.js" defer></script>
+</body>
+</html>
